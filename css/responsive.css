@@ -1,10 +1,9 @@
-/* ?A PARTIRE DA 768PX tabley */
+/* ?A PARTIRE DA 768PX table */
 
 @media screen and (min-width: 768px) {
 
     /* Logo header si allinea a sinistra */
     header h1 {
-        font-size: 3.3rem;
         text-align: left;
     }
 
@@ -13,10 +12,16 @@
         padding: 0 40px;
     }
 
-    /* Compare il testo 2dolce tradizionale" */
+    /* Compare il testo "dolce tradizionale" */
     .recipe .hidden {
         display: inline-block;
     }
+
+    /* La grandezza del titolo della ricetta diventa più grande */
+    .recipe-type h3 {
+        font-size: 2.2rem;
+    }
+
 
     /* Le info della ricetta sotto il video si dispongono a griglia */
     .recipe-preparation ul {
@@ -51,7 +56,45 @@
 /* ?A PARTIRE DA 992PX desktop*/
 
 @media screen and (min-width: 992px) {
-    header h1 {
-        font-size: 1.5rem;
+
+    /* La grandezza del titolo della ricetta aumenta ancora di più */
+    .recipe-type h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+    .recipe .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recipe-section {
+        flex-basis: 100%;
+    }
+
+    .youtube {
+        flex-basis: 70%;
+    }
+
+    .preparation {
+        flex-basis: 30%;
+    }
+
+
+    /* Compaiono i nomi delle piattaforme social */
+    .social-name {
+        display: inline-block;
+    }
+
+    /* Nel footer i dati del sito e il menu di navigazione si dispongono sulla stessa linea ma su lati opposti */
+    footer {
+        padding: 20px 5px;
+        text-align: left;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

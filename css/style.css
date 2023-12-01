@@ -63,6 +63,11 @@ iframe {
     margin-top: var(--space20);
 }
 
+.social a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
 
 
 
@@ -234,6 +239,7 @@ footer p {
 
 footer ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
 }
