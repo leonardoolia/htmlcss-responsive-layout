@@ -88,7 +88,7 @@ header h1 {
     background-color: #fff;
     text-align: center;
     font-size: 3rem;
-    padding: var(--space20) 0;
+    padding: var(--space20) 20px;
 }
 
 /* ?MAIN */
@@ -111,6 +111,10 @@ header h1 {
     color: #4e3969;
 }
 
+.recipe .hidden {
+    display: none;
+}
+
 .recipe-rating {
     display: flex;
     align-items: flex-end;
@@ -127,6 +131,7 @@ header h1 {
     border-radius: 40%;
     padding: 5px 10px;
 }
+
 
 
 /* Sezione preparazione */
@@ -168,8 +173,6 @@ header h1 {
     gap: 5px;
 }
 
-/* 247 151 46 */
-
 .recipe-preparation {
     margin-left: var(--space40);
 }
@@ -206,7 +209,9 @@ header h1 {
 }
 
 .presentation-image {
-    padding: 20px 80px;
+    padding: var(--space20) 0;
+    width: 60%;
+    margin: 0 auto;
 }
 
 
