@@ -18,11 +18,30 @@
 /* Fonts */
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    background-color: lightblue;
 }
 
 header h1 {
     font-family: 'Nerko One', cursive;
 }
+
+/* List */
+ul {
+    list-style-type: none;
+}
+
+/* ?UTILS */
+/* Container */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
 
 /* ?HEADER */
 
@@ -30,4 +49,34 @@ header h1 {
     color: var(--primarycolor);
     text-align: center;
     font-size: 3rem;
+}
+
+/* ?MAIN */
+
+/* !Recipe section */
+
+/* Sezione nome ricetta */
+.recipe .col:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-rating {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Sezione preparazione */
+
+.recipe-info {
+    margin: 40px;
+}
+
+.diet-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-preparation {
+    margin-left: 40px;
 }
