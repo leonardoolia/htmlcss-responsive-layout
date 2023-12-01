@@ -4,6 +4,8 @@
 :root {
     --primarycolor: #f7972e;
     --secondarycolor: #7c69a4;
+    --space40: 40px;
+    --space20: 20px;
 }
 
 
@@ -36,6 +38,10 @@ img {
     width: 100%;
 }
 
+section {
+    margin-bottom: var(--space40);
+}
+
 /* List */
 ul {
     list-style-type: none;
@@ -47,11 +53,15 @@ ul {
 }
 
 /* Banner */
-
 .banner {
     display: none;
 }
 
+/* Video */
+iframe {
+    display: block;
+    margin-top: var(--space20);
+}
 
 
 
@@ -60,12 +70,14 @@ ul {
 /* Container */
 .container {
     margin: 0 auto;
-    padding: 20px;
+    padding: var(--space20);
 }
 
+/* Font-weight */
 .bold {
     font-weight: bold;
 }
+
 
 
 
@@ -73,8 +85,10 @@ ul {
 
 header h1 {
     color: var(--primarycolor);
+    background-color: #fff;
     text-align: center;
     font-size: 3rem;
+    padding: var(--space20) 0;
 }
 
 /* ?MAIN */
@@ -92,28 +106,46 @@ header h1 {
     align-items: flex-end;
 }
 
+
+
 /* Sezione preparazione */
 
+.col.preparation {
+    background-color: #fff;
+    padding: 10px 0 20px 0;
+}
+
 .recipe-info {
-    margin: 40px;
+    margin: var(--space40);
 }
 
 .diet-info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: var(--space20);
+    padding-bottom: var(--space20);
+    border-bottom: 1px solid lightgrey;
 }
 
 .recipe-preparation {
-    margin-left: 40px;
+    margin-left: var(--space40);
 }
 
+.recipe-preparation li {
+    margin-bottom: 10px;
+}
+
+
 /* Sezione social */
+
+.social {
+    margin: var(--space40) 0;
+}
 
 .social ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 
 .social li {
     padding: 10px 15px;
@@ -146,6 +178,10 @@ footer {
 
 footer a {
     color: #fff;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
 
 footer ul {
