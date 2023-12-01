@@ -27,7 +27,7 @@
 /* Fonts */
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    background-color: lightblue;
+    background-color: #f6f5f9;
 }
 
 header h1 {
@@ -105,8 +105,9 @@ header h1 {
     color: #a5afbf;
 }
 
-.recipe-type h3 {
+.recipe-name {
     font-size: 1.8rem;
+    font-size: 2rem;
     color: #4e3969;
 }
 
@@ -132,11 +133,14 @@ header h1 {
 
 .col.preparation {
     background-color: #fff;
+    box-shadow: 0 5px 5px gray;
     padding: 10px 0 20px 0;
 }
 
 .recipe-info {
     margin: var(--space40);
+    background-color: #f6f5f9;
+    padding: 20px;
 }
 
 .diet-info {
@@ -146,6 +150,25 @@ header h1 {
     padding-bottom: var(--space20);
     border-bottom: 1px solid lightgrey;
 }
+
+.kcal {
+    color: #fff;
+    background-color: var(--secondarycolor);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.more-info {
+    color: var(--primarycolor);
+    font-size: 1.2rem;
+}
+
+.diet-type {
+    display: flex;
+    gap: 5px;
+}
+
+/* 247 151 46 */
 
 .recipe-preparation {
     margin-left: var(--space40);
