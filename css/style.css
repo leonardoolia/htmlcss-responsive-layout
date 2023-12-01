@@ -101,11 +101,31 @@ header h1 {
     justify-content: space-between;
 }
 
+.recipe-type .category {
+    color: #a5afbf;
+}
+
+.recipe-type h3 {
+    font-size: 1.8rem;
+    color: #4e3969;
+}
+
 .recipe-rating {
     display: flex;
     align-items: flex-end;
+    padding-right: 10px;
 }
 
+.rating-number {
+    padding: 5px 10px;
+}
+
+.rate {
+    color: #fff;
+    background-color: var(--primarycolor);
+    border-radius: 40%;
+    padding: 5px 10px;
+}
 
 
 /* Sezione preparazione */
