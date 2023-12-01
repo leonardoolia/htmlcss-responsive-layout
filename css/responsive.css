@@ -1,15 +1,54 @@
-/* ?A PARTIRE DA 768PX */
+/* ?A PARTIRE DA 768PX tabley */
 
 @media screen and (min-width: 768px) {
+
+    /* Logo header si allinea a sinistra */
     header h1 {
-        font-size: 2rem;
+        font-size: 3.3rem;
         text-align: left;
-        margin-left: 20px;
+    }
+
+    /* Padding del contenuto della pagina aumenta */
+    .container {
+        padding: 0 40px;
+    }
+
+    /* Compare il testo 2dolce tradizionale" */
+    .recipe .hidden {
+        display: inline-block;
+    }
+
+    /* Le info della ricetta sotto il video si dispongono a griglia */
+    .recipe-preparation ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    /* I bottoni social si allargano */
+    .social li {
+        flex-basis: calc(80% / 5);
+        text-align: center;
+    }
+
+    /* Compare il banner pubblicitario */
+    .banner {
+        display: block;
+    }
+
+    /* L'immagine nella descrizione della ricetta viene circondata dal testo */
+    .presentation figure {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .presentation p {
+        margin-top: 20px;
     }
 }
 
 
-/* ?A PARTIRE DA 992PX */
+/* ?A PARTIRE DA 992PX desktop*/
 
 @media screen and (min-width: 992px) {
     header h1 {
