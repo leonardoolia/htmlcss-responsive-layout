@@ -1,0 +1,18 @@
+/* ?A PARTIRE DA 768PX */
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+
+/* ?A PARTIRE DA 992PX */
+
+@media screen and (min-width: 992px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
