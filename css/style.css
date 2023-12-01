@@ -3,6 +3,7 @@
 /* Colors */
 :root {
     --primarycolor: #f7972e;
+    --secondarycolor: #7c69a4;
 }
 
 
@@ -118,4 +119,37 @@ header h1 {
     padding: 10px 15px;
     background-color: white;
     border-radius: 40%;
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* !Presentation section */
+
+.presentation h3 {
+    border-bottom: 4px solid var(--primarycolor);
+    border-image: linear-gradient(to right, var(--primarycolor) 30%, transparent 40%) 30%;
+
+}
+
+.presentation-image {
+    padding: 20px 80px;
+}
+
+
+/* ?FOOTER */
+
+footer {
+    background-color: var(--secondarycolor);
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
