@@ -6,12 +6,18 @@
 }
 
 
+
+
 /* ?CSS RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
 
 /* ?GENERALS */
 
@@ -25,10 +31,29 @@ header h1 {
     font-family: 'Nerko One', cursive;
 }
 
+img {
+    width: 100%;
+}
+
 /* List */
 ul {
     list-style-type: none;
 }
+
+/* Social */
+.social-name {
+    display: none;
+}
+
+/* Banner */
+
+.banner {
+    display: none;
+}
+
+
+
+
 
 /* ?UTILS */
 /* Container */
@@ -79,4 +104,18 @@ header h1 {
 
 .recipe-preparation {
     margin-left: 40px;
+}
+
+/* Sezione social */
+
+.social ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.social li {
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 40%;
 }
