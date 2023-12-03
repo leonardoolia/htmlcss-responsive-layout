@@ -196,6 +196,7 @@ header h1 {
 .social ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .social li {
@@ -205,18 +206,29 @@ header h1 {
     box-shadow: 5px 5px 5px gray;
 }
 
+.social-name {
+    font-size: 0.8rem;
+}
+
 /* !Presentation section */
 
 .presentation h3 {
-    border-bottom: 4px solid var(--primarycolor);
-    border-image: linear-gradient(to right, var(--primarycolor) 30%, transparent 40%) 30%;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, var(--primarycolor) 10%, transparent 10%) 100% 1;
 
 }
 
 .presentation-image {
     padding: var(--space20) 0;
-    width: 60%;
+    max-width: 50%;
     margin: 0 auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 

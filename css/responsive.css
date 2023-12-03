@@ -45,6 +45,11 @@
     .presentation figure {
         float: left;
         margin-right: 10px;
+        width: 25%
+    }
+
+    .presentation {
+        margin-bottom: 100px;
     }
 
     .presentation p {
@@ -56,6 +61,10 @@
 /* ?A PARTIRE DA 992PX desktop*/
 
 @media screen and (min-width: 992px) {
+
+    .container {
+        padding: 0 100px;
+    }
 
     /* La grandezza del titolo della ricetta aumenta ancora di più */
     .recipe-type h3 {
@@ -76,8 +85,13 @@
         flex-basis: 70%;
     }
 
+    iframe {
+        height: 97%;
+    }
+
     .preparation {
         flex-basis: 30%;
+        margin-top: var(--space20);
     }
 
 
